@@ -4164,9 +4164,9 @@ FRESULT f_getcwd (
 	TCHAR *tp = buff;
 #if FF_VOLUMES >= 2
 	UINT vl;
-#endif
 #if FF_STR_VOLUME_ID
 	const char *vp;
+#endif
 #endif
 	FILINFO fno;
 	DEF_NAMBUF
@@ -6228,7 +6228,7 @@ static void putc_bfd (		/* Buffered write with code conversion */
 	WCHAR hs, wc;
 #if FF_LFN_UNICODE == 2
 	DWORD dc;
-	TCHAR *tp;
+	const TCHAR *tp;
 #endif
 #endif
 
